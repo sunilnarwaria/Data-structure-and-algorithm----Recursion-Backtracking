@@ -12,9 +12,9 @@ public:
             }
            return; 
         }
-        if(candidates[idx] <= target){
+        if(candidates[idx] <= target){   
         res.push_back(candidates[idx]);
-        find(candidates,ans,idx,target - candidates[idx] ,n,res);
+        find(candidates,ans,idx,target - candidates[idx] ,n,res);  // repeat element pick kr rhe hai
         res.pop_back();
         }
         find(candidates,ans,idx + 1,target,n,res);
